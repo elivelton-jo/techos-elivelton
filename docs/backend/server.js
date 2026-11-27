@@ -30,6 +30,10 @@ db.connect((err) => {
 const clientesRoutes = require('./routes/clientes')(db);
 app.use('/api/clientes', clientesRoutes);
 
+// Importar e utilizar as rotas de Ordens de Serviço (OS)
+const osRoutes = require('./routes/os')(db);
+app.use('/api/os', osRoutes);
+
 // Rota de Teste da API
 app.get('/', (req, res) => {
     res.json({ mensagem: 'API do TechOS a funcionar com sucesso! 🚀' });
