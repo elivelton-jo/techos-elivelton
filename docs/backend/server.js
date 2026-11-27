@@ -26,6 +26,10 @@ db.connect((err) => {
     console.log('Conectado com sucesso à base de dados techos_db!');
 });
 
+// Importar e utilizar as rotas de Clientes
+const clientesRoutes = require('./routes/clientes')(db);
+app.use('/api/clientes', clientesRoutes);
+
 // Rota de Teste da API
 app.get('/', (req, res) => {
     res.json({ mensagem: 'API do TechOS a funcionar com sucesso! 🚀' });
@@ -34,6 +38,4 @@ app.get('/', (req, res) => {
 // Iniciar o Servidor
 app.listen(PORT, () => {
     console.log(`Servidor a correr na porta ${PORT}`);
-});git add .
-git commit -m "feat: adiciona configuracao inicial do servidor express e conexao mysql"
-git push origin main
+});
