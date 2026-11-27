@@ -5,4 +5,4 @@ Gest�o de Ordens de Servi�o da TechService
 * **Instituição:** SENAI Belo Jardim
 * **Curso:** Técnico em Desenvolvimento de Sistemas
 * **Turma:** 251.009 NEM SESI
-* **Docente:** Ryan Oliveira
+* **Docente:** Ryan Oliveira 
